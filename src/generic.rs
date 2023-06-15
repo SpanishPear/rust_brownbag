@@ -19,5 +19,10 @@ fn main() {
 
 fn my_generic_sum_of_slice<T>(slice: &[T]) -> T {
     // TODO: implement this function
+    let mut sum = 0;
+    for i in slice {
+        sum += i;
+    }
+    sum
 }
 
